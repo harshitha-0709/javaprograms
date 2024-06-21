@@ -1,0 +1,19 @@
+class Solution {
+    public boolean isHappy(int num) {
+        while(num>=10){
+            int sum=0;
+            while(num!=0){
+                int r=num%10;
+                sum=sum+r*r;
+                num=num/10;
+            }
+            num=sum;
+        }
+        if(num==1||num==7){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+}
