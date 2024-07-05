@@ -1,0 +1,21 @@
+public class stringbasic {
+    public static void main(String[] args){
+        String input="Am Harshitha from aiml";
+        int vowelcount=0;
+        int consonantcount=0;
+        for(int i=0;i<input.length();i++){
+            char ch=input.charAt(i);
+            if(ch>='a' && ch<='z'||ch>='A'&&ch<='Z'){
+                if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'){
+                    vowelcount++;
+                }
+                else{
+                    consonantcount++;
+                }
+            }
+        }
+        System.out.println("vowels:"+vowelcount);
+        System.out.println("consonants:"+consonantcount);
+
+    }
+}
